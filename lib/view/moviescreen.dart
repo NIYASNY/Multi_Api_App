@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:multi_api_app/model/movie/moviemodel.dart';
-import 'package:multi_api_app/utils/api/api.dart';
+import 'package:multi_api_app/utils/api/movieapi/mapi.dart';
 import 'package:multi_api_app/view/widgets/movieslider.dart';
 import 'package:multi_api_app/view/widgets/trendingslider.dart';
 

@@ -53,7 +53,7 @@ import 'package:flutter/material.dart';
 import 'package:multi_api_app/view/moviescreen.dart';
 import 'package:multi_api_app/view/newsscreen.dart';
 import 'package:multi_api_app/view/timezonescreen.dart';
-import 'package:multi_api_app/view/weatherscreen.dart';
+import 'package:multi_api_app/view/weather/weatherscreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
               _buildCard(
                 context,
                 title: "Weather",
-                screen: const WeatherScreen(),
+                screen:  WeatherScreen(),
                 icon: Icons.wb_sunny,
                 iconColor: Colors.orangeAccent,
               ),
