@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:multi_api_app/utils/api/weather/wapi.dart';
 import 'package:get/get.dart';
 
@@ -40,37 +39,37 @@ changeTheme(){
         return themeMode.value;
 }
 
- getLocation() async{
-  bool isServiceEnabled;
-    LocationPermission locationPermission;
+//  getLocation() async{
+//   bool isServiceEnabled;
+//     LocationPermission locationPermission;
 
-    isServiceEnabled = await Geolocator.isLocationServiceEnabled();
-    // return if service is not enabled
-    if (!isServiceEnabled) {
-      return Future.error("Location not enabled");
-    }
+//     isServiceEnabled = await Geolocator.isLocationServiceEnabled();
+//     // return if service is not enabled
+//     if (!isServiceEnabled) {
+//       return Future.error("Location not enabled");
+//     }
 
-    // status of permission
-    locationPermission = await Geolocator.checkPermission();
+//     // status of permission
+//     locationPermission = await Geolocator.checkPermission();
 
-    if (locationPermission == LocationPermission.deniedForever) {
-      return Future.error("Location permission are denied forever");
-    } else if (locationPermission == LocationPermission.denied) {
-      // request permission
-      locationPermission = await Geolocator.requestPermission();
-      if (locationPermission == LocationPermission.denied) {
-        return Future.error("Location permission is denied");
-      }
-    }
+//     if (locationPermission == LocationPermission.deniedForever) {
+//       return Future.error("Location permission are denied forever");
+//     } else if (locationPermission == LocationPermission.denied) {
+//       // request permission
+//       locationPermission = await Geolocator.requestPermission();
+//       if (locationPermission == LocationPermission.denied) {
+//         return Future.error("Location permission is denied");
+//       }
+//     }
 
-    // getting the currentposition
-    return await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.high)
-        .then((value) {
-      // update our lattitude and longitude
-      _latitude.value = value.latitude;
-      _longitude.value = value.longitude;
-      });
-}
+//     // getting the currentposition
+//     return await Geolocator.getCurrentPosition(
+//             desiredAccuracy: LocationAccuracy.high)
+//         .then((value) {
+//       // update our lattitude and longitude
+//       _latitude.value = value.latitude;
+//       _longitude.value = value.longitude;
+//       });
+// }
 
 }

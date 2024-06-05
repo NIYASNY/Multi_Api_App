@@ -1,15 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class WeatherScreen extends StatelessWidget {
-//   const WeatherScreen({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
