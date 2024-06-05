@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:multi_api_app/model/movie/moviemodel.dart';
+import 'package:multi_api_app/utils/api/api.dart';
+import 'package:multi_api_app/view/widgets/trendingslider.dart';
 
 class MovieScreen extends StatefulWidget {
   const MovieScreen({super.key});
 
   @override
-  State<MovieScreen> createState() => _HomeScreenState();
+  State<MovieScreen> createState() => _MovieScreenState();
 }
 
-class _HomeScreenState extends State<MovieScreen> {
+class _MovieScreenState extends State<MovieScreen> {
   int pageIndex = 0;
   late Future<List<Movie>> trendingMovies;
   late Future<List<Movie>> topratedMovies;
@@ -15,12 +19,17 @@ class _HomeScreenState extends State<MovieScreen> {
 
   final ScrollController _scrollController = ScrollController();
 
+  // @override
+  // void initState() {
+  //   trendingMovies = Api().getTrendingmovies();
+  //   topratedMovies = Api().getTopRatedMovies();
+  //   upcomingMovies = Api().getupcomingMovies();
+  //   super.initState();
+  // }
 
   @override
   void initState() {
-    trendingMovies = Api().getTrendingmovies();
-    topratedMovies = Api().getTopRatedMovies();
-    upcomingMovies = Api().getupcomingMovies();
+    trendingMovies = Api().getTrendingMovies();
     super.initState();
   }
 
