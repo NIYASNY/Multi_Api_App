@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:multi_api_app/model/constants.dart';
+import 'package:multi_api_app/view/screens/detailscreen.dart';
 
 
 class trendingslidar extends StatelessWidget {

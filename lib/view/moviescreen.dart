@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:multi_api_app/model/movie/moviemodel.dart';
 import 'package:multi_api_app/utils/api/api.dart';
+import 'package:multi_api_app/view/widgets/movieslider.dart';
 import 'package:multi_api_app/view/widgets/trendingslider.dart';
 
 class MovieScreen extends StatefulWidget {
@@ -19,19 +20,17 @@ class _MovieScreenState extends State<MovieScreen> {
 
   final ScrollController _scrollController = ScrollController();
 
-  // @override
-  // void initState() {
-  //   trendingMovies = Api().getTrendingmovies();
-  //   topratedMovies = Api().getTopRatedMovies();
-  //   upcomingMovies = Api().getupcomingMovies();
-  //   super.initState();
-  // }
+
 
   @override
   void initState() {
-    trendingMovies = Api().getTrendingMovies();
+    trendingMovies = Api().getTrendingmovies();
+    topratedMovies = Api().getTopRatedMovies();
+    upcomingMovies = Api().getupcomingMovies();
     super.initState();
   }
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +72,9 @@ class _MovieScreenState extends State<MovieScreen> {
             ),
             SizedBox(
               height: 16,
+              
             ),
+
             // trendingslidar(),
             SizedBox(
               child: FutureBuilder(
@@ -155,7 +156,6 @@ class _MovieScreenState extends State<MovieScreen> {
                 },
               ),
             ),
-            // upcomingslider(),
           ],
         ),
       ),
