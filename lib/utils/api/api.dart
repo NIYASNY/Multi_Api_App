@@ -48,18 +48,4 @@ import 'package:multi_api_app/model/movie/moviemodel.dart';
         throw Exception("Something went wrong");
       }
     }
-
-    // Future<List<Movie>> postData(Map<String, dynamic> data) async {
-    //   final response = await http
-    //       .post(Uri.parse(_addfavourite), body: jsonEncode(data), headers: {
-    //     'Content-Type': 'application/json',
-    //   });
-    //   if (response.statusCode == 201) {
-    //     final decodedData = json.decode(response.body)['results'] as List;
-    //     print(decodedData);
-    //     return decodedData.map((movie) => Movie.fromJson(movie)).toList();
-    //   } else {
-    //     throw Exception('Failed to perform Post request');
-    //   }
-    // }
   }
