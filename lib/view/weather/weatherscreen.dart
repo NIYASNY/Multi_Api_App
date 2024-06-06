@@ -45,7 +45,6 @@ class _HomePageState extends State<WeatherScreen> {
                           children: [
                             Row(
                               children: [
-                                // ignore: unnecessary_string_interpolations
                                 "${data!.name}"
                                     .text
                                     .uppercase
