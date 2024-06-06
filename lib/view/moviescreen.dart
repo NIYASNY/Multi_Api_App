@@ -5,6 +5,8 @@ import 'package:multi_api_app/utils/api/movieapi/mapi.dart';
 import 'package:multi_api_app/view/widgets/movieslider.dart';
 import 'package:multi_api_app/view/widgets/trendingslider.dart';
 
+
+//moviescreen
 class MovieScreen extends StatefulWidget {
   const MovieScreen({super.key});
 
