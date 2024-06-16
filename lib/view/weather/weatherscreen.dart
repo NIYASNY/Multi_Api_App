@@ -13,6 +13,8 @@ import 'package:multi_api_app/view/widgets/weather/appbar.dart';
 import 'package:multi_api_app/view/widgets/weather/drawer_widget.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+
+//weather screen
 class WeatherScreen extends StatefulWidget {
   WeatherScreen({super.key});
 
