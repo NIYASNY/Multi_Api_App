@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:multi_api_app/model/constants.dart';
 import 'package:multi_api_app/view/screens/detailscreen.dart';
 
+
+//movie slider page
 class movieslider extends StatelessWidget {
   const movieslider({
     super.key,
