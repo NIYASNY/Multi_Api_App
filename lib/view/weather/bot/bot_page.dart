@@ -20,12 +20,6 @@ class _BotPageState extends State<BotPage> {
 
   List<Map<String, dynamic>> messages = [];
 
-  // @override
-  // void initState() {
-  //   DialogFlowtter.fromFile().then((instance) => dialogFlowtter = instance);
-  //   super.initState();
-  // }
-  
 
   @override
   Widget build(BuildContext context) {
