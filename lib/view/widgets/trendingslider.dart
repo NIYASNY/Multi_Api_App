@@ -4,6 +4,7 @@ import 'package:multi_api_app/model/constants.dart';
 import 'package:multi_api_app/view/screens/detailscreen.dart';
 
 
+//trending slider page
 class trendingslidar extends StatelessWidget {
   const trendingslidar({
     super.key,
