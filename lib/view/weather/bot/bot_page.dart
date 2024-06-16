@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:multi_api_app/view/homescreen.dart';
 import 'package:multi_api_app/view/widgets/weather/messages_screen.dart';
 
+//bot page
 class BotPage extends StatefulWidget {
   const BotPage({Key? key}) : super(key: key);
 
