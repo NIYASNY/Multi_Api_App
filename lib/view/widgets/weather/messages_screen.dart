@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+//messages screen
 class MessagesScreen extends StatefulWidget {
   final List messages;
   const MessagesScreen({Key? key, required this.messages}) : super(key: key);
