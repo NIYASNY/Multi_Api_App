@@ -4,7 +4,7 @@ import 'package:multi_api_app/model/constants.dart';
 import 'package:multi_api_app/model/movie/moviemodel.dart';
 import 'package:multi_api_app/view/widgets/weather/back_button.dart';
 
-
+//details screen
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key, required this.movie});
 
