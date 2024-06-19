@@ -1,3 +1,5 @@
+
+//movie model
 class Movie {
   String title;
   String backDropPath;
