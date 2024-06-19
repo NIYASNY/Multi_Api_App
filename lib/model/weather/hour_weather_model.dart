@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+//hourly weather data page
 HourlyWeatherData hourlyWeatherDataFromJson(String str) => HourlyWeatherData.fromJson(json.decode(str));
 
 class HourlyWeatherData {
