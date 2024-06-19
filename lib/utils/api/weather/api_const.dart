@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// weather api page
 const String degree = "°";
 const String apiKey ="Your API key ";
 const String currentEndpoint ="https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}";
