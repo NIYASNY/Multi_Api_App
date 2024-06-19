@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+//current weather data
 CurrentWeatherData currentWeatherDataFromJson(String str) =>
     CurrentWeatherData.fromJson(json.decode(str));
 
