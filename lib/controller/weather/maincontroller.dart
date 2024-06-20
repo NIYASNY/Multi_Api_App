@@ -3,7 +3,7 @@ import 'package:multi_api_app/utils/api/weather/wapi.dart';
 import 'package:get/get.dart';
 
 
-
+//maincontroller page
 class MainController extends GetxController{
 
  
