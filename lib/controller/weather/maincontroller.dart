@@ -10,9 +10,6 @@ class MainController extends GetxController{
   void onInit(){
     currentWeatherData = getCurrentWeather();
     hourWeatherData = getHourWeather();
-    // if (_isLoading.isTrue) {
-    //   getLocation();
-    // } 
     super.onInit();
   }
 
