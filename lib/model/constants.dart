@@ -1,5 +1,3 @@
-
-
 //constants page
 class Constants {
   static const apiKey = '3c68dd7dff00ba8ba33d7f88d1c3ea39';
