@@ -19,7 +19,7 @@ class LocationController extends GetxController {
         desiredAccuracy: LocationAccuracy.high,
       );
 
-      // Get the latitude and longitude
+
       double lat = position.latitude;
       double lon = position.longitude;
 
