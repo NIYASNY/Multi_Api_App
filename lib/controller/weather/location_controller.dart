@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 
 
+//location controller page
 class LocationController extends GetxController {
   RxString city = ''.obs;
 
