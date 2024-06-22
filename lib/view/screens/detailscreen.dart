@@ -67,7 +67,7 @@ class DetailsScreen extends StatelessWidget {
                     style: GoogleFonts.roboto(
                         fontSize: 25, fontWeight: FontWeight.w400),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
