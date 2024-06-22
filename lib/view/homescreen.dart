@@ -4,7 +4,6 @@ import 'package:multi_api_app/view/newsscreen.dart';
 import 'package:multi_api_app/view/timezonescreen.dart';
 import 'package:multi_api_app/view/weather/weatherscreen.dart';
 
-
 //homescreen
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
