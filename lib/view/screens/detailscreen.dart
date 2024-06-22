@@ -113,7 +113,7 @@ class DetailsScreen extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.star,
                                 color: Colors.amber,
                               ),
