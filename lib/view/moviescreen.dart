@@ -22,8 +22,6 @@ class _MovieScreenState extends State<MovieScreen> {
 
   final ScrollController _scrollController = ScrollController();
 
-
-
   @override
   void initState() {
     trendingMovies = Api().getTrendingmovies();
