@@ -56,7 +56,7 @@ class DetailsScreen extends StatelessWidget {
                       TextButton(
                           onPressed: () async {
                            },
-                          child: Icon(Icons.favorite))
+                          child: const Icon(Icons.favorite))
                     ],
                   ),
                   const SizedBox(
